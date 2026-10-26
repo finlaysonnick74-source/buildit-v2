@@ -243,3 +243,4 @@ h1[tabindex="-1"]:focus{outline:none}
 @media(min-width:1100px){.buddy[data-state="proof"]{left:auto;right:28px;bottom:auto;top:84px}}
 .buddy-inline{align-self:flex-start;flex:none}
 @media(min-width:900px) and (prefers-reduced-motion:no-preference){.js .browser img{max-height:calc(100vh - 490px);min-height:200px}}
+@media(min-width:900px) and (prefers-reduced-motion:no-preference){.js .shots{height:clamp(220px,calc(100vh - 440px),560px);max-height:none}.js .browser{height:100%}.js .browser img{height:calc(100% - 29px);max-height:none;min-height:0}.js .phone{height:92%;width:auto;bottom:-4%}.js .meta{margin-top:28px}}

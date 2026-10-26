@@ -241,3 +241,5 @@ section{padding:clamp(90px,14vh,160px) var(--pad);position:relative}
 h1[tabindex="-1"]:focus{outline:none}
 @media(min-width:900px) and (prefers-reduced-motion:no-preference){.js .proof-pin{padding-top:96px;justify-content:flex-start}}
 @media(min-width:1100px){.buddy[data-state="proof"]{left:auto;right:28px;bottom:auto;top:84px}}
+.buddy-inline{align-self:flex-start;flex:none}
+@media(min-width:900px) and (prefers-reduced-motion:no-preference){.js .browser img{max-height:calc(100vh - 490px);min-height:200px}}

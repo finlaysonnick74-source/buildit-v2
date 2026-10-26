@@ -207,7 +207,8 @@ section{padding:clamp(90px,14vh,160px) var(--pad);position:relative}
 
 /* companion */
 .buddy{position:fixed;left:clamp(12px,2vw,28px);bottom:24px;z-index:40;width:110px;pointer-events:none;opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s var(--ease)}
-.buddy:not([data-state="hero"]){opacity:1;transform:none}
+.buddy{opacity:1;transform:none;animation:breathe 3.2s ease-in-out infinite}
+@keyframes breathe{50%{translate:0 -6px;scale:1.02}}
 .b-fig{position:relative;height:165px;transition:transform .8s var(--ease),filter .8s}
 .b-fig img{height:100%;width:auto;margin:0 auto;transition:filter .9s,transform .9s var(--ease)}
 .b-sweep{position:absolute;inset:0;-webkit-mask:url(img/tomas.webp) center/contain no-repeat;mask:url(img/tomas.webp) center/contain no-repeat;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.75) 50%,transparent 70%) -150% 0/250% 100% no-repeat;opacity:0}
@@ -251,3 +252,8 @@ h1[tabindex="-1"]:focus{outline:none}
 .b-fig img{filter:drop-shadow(0 0 1px rgba(242,237,227,.6)) drop-shadow(0 6px 18px rgba(0,0,0,.6))}
 .buddy[data-state="then"] img{filter:grayscale(1) brightness(.72) contrast(1.05) drop-shadow(0 0 1px rgba(242,237,227,.5));transform:scale(.9) scaleX(-1) translateY(8px)}
 .buddy[data-state="then"] .b-fig::before{background:radial-gradient(closest-side,rgba(163,158,147,.25),transparent)}
+.hi{font:400 italic clamp(28px,3.4vw,52px)/1 var(--serif);color:var(--sig);margin:-8px 0 14px;position:relative}
+.buddy[data-state="hero"] .b-fig{animation:wave 1.4s .4s var(--ease) 2;transform-origin:50% 100%}
+.buddy[data-state="hero"] img{filter:drop-shadow(0 0 1px rgba(242,237,227,.7)) drop-shadow(0 0 16px rgba(34,211,238,.45))}
+@media(max-width:1099px){.buddy-inline{animation:breathe 3.2s ease-in-out infinite;filter:drop-shadow(0 0 10px rgba(34,211,238,.35))}.st-proof{animation:work 1.6s ease-in-out infinite}.st-hero{height:96px}}
+@media(prefers-reduced-motion:reduce){.buddy,.buddy-inline{animation:none!important}}

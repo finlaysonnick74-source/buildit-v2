@@ -255,5 +255,6 @@ h1[tabindex="-1"]:focus{outline:none}
 .hi{font:400 italic clamp(28px,3.4vw,52px)/1 var(--serif);color:var(--sig);margin:-8px 0 14px;position:relative}
 .buddy[data-state="hero"] .b-fig{animation:wave 1.4s .4s var(--ease) 2;transform-origin:50% 100%}
 .buddy[data-state="hero"] img{filter:drop-shadow(0 0 1px rgba(242,237,227,.7)) drop-shadow(0 0 16px rgba(34,211,238,.45))}
-@media(max-width:1099px){.buddy-inline{animation:breathe 3.2s ease-in-out infinite;filter:drop-shadow(0 0 10px rgba(34,211,238,.35))}.st-proof{animation:work 1.6s ease-in-out infinite}.st-hero{height:96px}}
+@media(max-width:1099px){.buddy-inline{animation:breathe 3.2s ease-in-out infinite}.st-hero,.st-proof{filter:drop-shadow(0 0 10px rgba(34,211,238,.45))}.st-then{filter:grayscale(1) brightness(.72) drop-shadow(0 0 1px rgba(242,237,227,.5))}.st-proof{animation:work 1.6s ease-in-out infinite}.st-hero{height:96px}}
 @media(prefers-reduced-motion:reduce){.buddy,.buddy-inline{animation:none!important}}
+@media(min-width:1100px){.hero{padding-left:max(var(--pad),170px)}}
